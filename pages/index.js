@@ -22,14 +22,16 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hi i am AZ, like human normaly i want to make money and make my parent proud of me</p>
+        <p>saya faris sekolah di rumah
+kesibukan sekarang lagi mastering oil paint
+saya menekuni ilustrasi sebab saya suka gambar dan saya belajar secara otodidak, target ya jadi professional dong.</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          more about me you can go to my social media,
+          <a href="https://instagram.com/27rse?igshid=MzRlODBiNWFlZA=="> my Instagram</a>.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Hasil belajar</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -42,6 +44,12 @@ export default function Home({allPostsData}) {
           ))}
         </ul>
       </section>
+      <footer>
+      <p>
+      if you want to make something like this (e.g kartu undangan nikah)<a href='https://www.linkedin.com/in/azet'> contact teman faris</a>  
+      </p>
+        
+      </footer>
     </Layout>
   );
 }
